@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 public class win {
     public static win app;
+    public static Setting set =new Setting();
     private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
     private  JFrame main_GUI=new JFrame();
     private  JPanel main_panel= new JPanel();
