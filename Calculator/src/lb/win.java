@@ -5,9 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class win {
-	 public static win app;
-	    public static Setting set =new Setting();//значения выбранных параметров для расчета
-	    private LisstenersClass lisstenersClass=new LisstenersClass();
+	    public Setting set =new Setting();//значения выбранных параметров для расчета
+	    private LisstenersClass lisstenersClass=new LisstenersClass(this);
 	    private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
 	    private  JFrame main_GUI=new JFrame();
 	    private  JPanel main_panel= new JPanel();
@@ -51,8 +50,8 @@ public class win {
 	        buttons[6].setText("Падение небесных тел");
 
 
-	        JLabel info = new JLabel("Расчет стоимости полиса страхования");
-	        info.setBounds(0,0,300,30);
+	        JLabel info = new JLabel("Расчет стоимости полиса страхования на 1 год");
+	        info.setBounds(0,0,400,30);
 	        main_panel.add(info);
 
 	        button_exit.setBounds(20,400,100,40);
@@ -85,6 +84,6 @@ public class win {
 
 	    }
 	    public static void main(String[] args) {
-	        app=new win();
+	        win app=new win();
 	    }
 }

@@ -11,7 +11,7 @@ public class Calcalute extends ACalculate{
     public  float Cal(Setting s) {
         float sum = 0;
         for (int i = 0; i < 7; i++) {
-            sum = sum + s.CostOfProperty *s.p[i] * koefficiets[s.TypeOfProperty][i];
+            sum = sum + s.CostOfProperty *s.get(i) * koefficiets[s.TypeOfProperty][i];
         }
         polis=sum;
         return sum;

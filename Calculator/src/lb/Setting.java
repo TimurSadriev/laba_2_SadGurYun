@@ -5,7 +5,7 @@ import javax.swing.*;
 public class Setting extends Asetting{
     public int TypeOfProperty;//тип имущества
     public float CostOfProperty;//стоимость имущества
-    public int[] p=new int [7];//массив сохраняющий параметры пользователя из кнопок (от чего страховать)
+    private int[] p=new int [7];//массив сохраняющий параметры пользователя из кнопок (от чего страховать)
     @Override
     public void setCost(JTextField field) throws NumberFormatException {
         try {

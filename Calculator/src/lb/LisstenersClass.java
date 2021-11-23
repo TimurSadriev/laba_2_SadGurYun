@@ -4,13 +4,17 @@ import java.awt.event.ActionListener;
 import static lb.win.*;
 
 public class LisstenersClass {
+	win w;
+	LisstenersClass(win w){
+		this.w=w;
+	}
 	 public  ListenerExit listenerExit=new ListenerExit();
 	    public  ListenerCalculate listenerCalculate=new ListenerCalculate();
 	    public  ListenerType listenerType=new ListenerType();
 	    public class ListenerType implements ActionListener {
 	        @Override
 	        public void actionPerformed(ActionEvent event) {
-	            win.app.set.setType(win.app.type.getSelectedIndex());//запоминаем тип имущества в настройках
+	            w.set.setType(w.type.getSelectedIndex());//запоминаем тип имущества в настройках
 	        }
 	    }
 	    public class ListenerExit implements ActionListener {
@@ -23,14 +27,14 @@ public class LisstenersClass {
 	        @Override
 	        public void actionPerformed(ActionEvent event) {
 	            try{
-	                win.app.set.setCost(win.app.input);
+	                w.set.setCost(w.input);
 	            } catch (NumberFormatException e) {
-	                win.app.output.setText("Ошибка введено не число");
-	                win.app.input.setText("");
+	                w.output.setText("Ошибка введено не число");
+	                w.input.setText("");
 	                return;
 	            }
 	            Calcalute c=new Calcalute();
-	            win.app.output.setText(Float.toString(c.Cal(win.app.set)));
+	            w.output.setText(Float.toString(c.Cal(w.set)));
 	        }
 	    }
 }
