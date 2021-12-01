@@ -26,7 +26,6 @@ public class win {
 
 	        main_panel.setLayout(null);
 	        main_GUI.add(main_panel);
-
 	        for(int i = 0; i < 7; i++) {
 	            buttons[i] = new JRadioButton();
 	            buttons[i].setBounds(20,50+20*i,200,30);
