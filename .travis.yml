@@ -1,6 +1,6 @@
 language: java
 before_script:
--echo "test"
+ - echo "test"
 script:
-- mvn clean compile
+ - mvn clean compile
 
