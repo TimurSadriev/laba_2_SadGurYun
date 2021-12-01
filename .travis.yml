@@ -1,6 +1,5 @@
 language: java
-before_script:
- - echo "test"
+sudo: false
 script:
  - mvn clean compile
 
