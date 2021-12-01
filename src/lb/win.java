@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class win {
+		public void test() {};
 	    public Setting set =new Setting();//значения выбранных параметров для расчета
 	    private LisstenersClass lisstenersClass=new LisstenersClass(this);
 	    private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
