@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class win {
-		public void test() {};
 	    public Setting set =new Setting();//значения выбранных параметров для расчета
 	    private LisstenersClass lisstenersClass=new LisstenersClass(this);
 	    private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
@@ -13,6 +12,7 @@ public class win {
 	    private  JPanel main_panel= new JPanel();
 	    protected JComboBox type;
 	    private  JButton button_exit = new JButton("Выход");
+		private  JButton button_infa = new JButton("Разработчики");
 	    private  JButton button_calculate = new JButton("Рассчитать");
 	    private  JLabel info1 = new JLabel("Введите стоимость имущества");
 	    protected JTextField output= new JTextField("", 20);
@@ -65,6 +65,10 @@ public class win {
 
 	        button_calculate.setBounds(20,230,150,40);
 	        main_panel.add(button_calculate);
+
+			button_infa.setBounds(140,400,140,40);
+			button_infa.addActionListener(lisstenersClass.listenerInfa);
+			main_panel.add(button_infa);
 
 	        JLabel info2 = new JLabel("Вид имущества");
 	        info2.setBounds(20,25,120,30);
