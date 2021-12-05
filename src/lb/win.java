@@ -31,14 +31,19 @@ public class win {
 	            buttons[i] = new JRadioButton();
 	            buttons[i].setBounds(20,50+20*i,200,30);
 	            int n=i;
-	            buttons[i].addActionListener(new ActionListener() {
+	            /*buttons[i].addActionListener(new ActionListener() {
 	                @Override
 	                public void actionPerformed(ActionEvent e) {
 	                    if (buttons[n].isSelected())
 	                        set.set(n);
 	                    else  set.reset(n);
 	                }
-	            });
+	            });*/
+	            buttons[i].addActionListener((ActionEvent e)-> {
+	                    if (buttons[n].isSelected())
+	                        set.set(n);
+	                    else  set.reset(n);
+	                });
 	            main_panel.add(buttons[i]);
 	        }
 	        buttons[0].setText("Пожар");
