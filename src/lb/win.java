@@ -87,6 +87,10 @@ public class win {
 
 	        output.setBounds(20,280,300,100);
 	        main_panel.add(output);
+	        Image logo = new Image(); //загрузка картинки
+	    	logo.setSize(180, 100);
+	    	logo.setLocation(200, 0);
+	    	main_panel.add(logo);
 
 	        main_GUI.setVisible(true);
 	        main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
