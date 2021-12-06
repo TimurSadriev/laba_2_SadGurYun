@@ -51,13 +51,13 @@ public class LisstenersClass {
 				JLabel info = new JLabel("Разработчики:");
 				info.setBounds(0,0,400,30);
 				main_panel.add(info);
-				JLabel info2 = new JLabel("*Тимур Садриев - Номер зачетной книжки: 19130079");
+				JLabel info2 = new JLabel("*Тимур Садриев - Номер зачетной книжки:19130079");
 				info2.setBounds(20,25,1000,30);
 				main_panel.add(info2);
-				JLabel info3 = new JLabel("*Максим Юняев - Номер зачетной книжки: 19130087");
+				JLabel info3 = new JLabel("*Максим Юняев - Номер зачетной книжки:19130087");
 				info3.setBounds(20,55,1000,30);
 				main_panel.add(info3);
-				JLabel info4 = new JLabel("*Игорь Гурьянов - Номер зачетной книжки: 19130545");
+				JLabel info4 = new JLabel("*Игорь Гурьянов - Номер зачетной книжки:19130545");
 				info4.setBounds(20,85,1000,30);
 				main_panel.add(info4);
 				main_GUI.setVisible(true);
