@@ -4,21 +4,52 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+// TODO: Auto-generated Javadoc
+/**
+ * Основной класс программы с интерфейсом
+ */
 public class win {
-	    public Setting set =new Setting();//значения выбранных параметров для расчета
-	    private LisstenersClass lisstenersClass=new LisstenersClass(this);
-	    private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
-	    private  JFrame main_GUI=new JFrame();
-	    private  JPanel main_panel= new JPanel();
-	    protected JComboBox type;
-	    private  JButton button_exit = new JButton("Выход");
+	    
+    	/** The set. */
+    	public Setting set =new Setting();//значения выбранных параметров для расчета
+	    
+    	/** The lissteners class. */
+    	private LisstenersClass lisstenersClass=new LisstenersClass(this);
+	    
+    	/** The buttons. */
+    	private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
+	    
+    	/** The main GUI. */
+    	private  JFrame main_GUI=new JFrame();
+	    
+    	/** The main panel. */
+    	private  JPanel main_panel= new JPanel();
+	    
+    	/** The type. */
+    	protected JComboBox type;
+	    
+    	/** The button exit. */
+    	private  JButton button_exit = new JButton("Выход");
+		
+		/** The button infa. */
 		private  JButton button_infa = new JButton("Разработчики");
-	    private  JButton button_calculate = new JButton("Рассчитать");
-	    private  JLabel info1 = new JLabel("Введите стоимость имущества");
-	    protected JTextField output= new JTextField("", 20);
-	    protected  JTextField input = new JTextField("", 20);
+	    
+    	/** The button calculate. */
+    	private  JButton button_calculate = new JButton("Рассчитать");
+	    
+    	/** The info 1. */
+    	private  JLabel info1 = new JLabel("Введите стоимость имущества");
+	    
+    	/** The output. */
+    	protected JTextField output= new JTextField("", 20);
+	    
+    	/** The input. */
+    	protected  JTextField input = new JTextField("", 20);
 
-	    public  win() {
+	    /**
+    	 * Instantiates a new win.
+    	 */
+    	public  win() {
 	        button_calculate.addActionListener(lisstenersClass.listenerCalculate);
 	        output.setEditable(false);
 	        main_GUI.setTitle ("Калькулятор");
@@ -96,7 +127,13 @@ public class win {
 	        main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	    }
-	    public static void main(String[] args) {
+	    
+    	/**
+    	 * The main method.
+    	 *
+    	 * @param args the arguments
+    	 */
+    	public static void main(String[] args) {
 	        win app=new win();
 	    }
 }

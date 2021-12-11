@@ -3,29 +3,79 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class LisstenersClass.
+ */
 public class LisstenersClass {
+	
+	/** The w. */
 	win w;
+	
+	/**
+	 * Instantiates a new lissteners class.
+	 *
+	 * @param w the w
+	 */
 	LisstenersClass(win w){
 		this.w=w;
 	}
-	 public  ListenerExit listenerExit=new ListenerExit();
-	    public  ListenerCalculate listenerCalculate=new ListenerCalculate();
-	    public  ListenerType listenerType=new ListenerType();
+	 
+ 	/** The listener exit. */
+ 	public  ListenerExit listenerExit=new ListenerExit();
+	    
+    	/** The listener calculate. */
+    	public  ListenerCalculate listenerCalculate=new ListenerCalculate();
+	    
+    	/** The listener type. */
+    	public  ListenerType listenerType=new ListenerType();
+		
+		/** The listener infa. */
 		public  ListenerInfa listenerInfa=new ListenerInfa();
-	    public class ListenerType implements ActionListener {
-	        @Override
+	    
+    	/**
+    	 * The Class ListenerType.
+    	 */
+    	public class ListenerType implements ActionListener {
+	        
+        	/**
+        	 * Action performed.
+        	 *
+        	 * @param event the event
+        	 */
+        	@Override
 	        public void actionPerformed(ActionEvent event) {
 	            w.set.setType(w.type.getSelectedIndex());//запоминаем тип имущества в настройках
 	        }
 	    }
-	    public class ListenerExit implements ActionListener {
-	        @Override
+	    
+    	/**
+    	 * The Class ListenerExit.
+    	 */
+    	public class ListenerExit implements ActionListener {
+	        
+        	/**
+        	 * Action performed.
+        	 *
+        	 * @param arg0 the arg 0
+        	 */
+        	@Override
 	        public void actionPerformed(ActionEvent arg0) {
 	            System.exit(1);
 	        }
 	    }
-	    public class ListenerCalculate implements ActionListener {
-	        @Override
+	    
+    	/**
+    	 * The Class ListenerCalculate.
+    	 */
+    	public class ListenerCalculate implements ActionListener {
+	        
+        	/**
+        	 * Action performed.
+        	 *
+        	 * @param event the event
+        	 */
+        	@Override
 	        public void actionPerformed(ActionEvent event) {
 	            try{
 	                w.set.setCost(w.input);
@@ -38,7 +88,17 @@ public class LisstenersClass {
 	            w.output.setText(Float.toString(c.Cal(w.set)));
 	        }
 	    }
+	
+	/**
+	 * The Class ListenerInfa.
+	 */
 	public class ListenerInfa implements ActionListener {
+		
+		/**
+		 * Action performed.
+		 *
+		 * @param event the event
+		 */
 		@Override
 		public void actionPerformed(ActionEvent event) {
 			JFrame main_GUI=new JFrame();

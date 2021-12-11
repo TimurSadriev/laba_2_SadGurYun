@@ -8,10 +8,18 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JComponent;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Image.
+ */
 public class Image extends JComponent {
 
+	/** The image. */
 	BufferedImage image;
 	
+	/**
+	 * Instantiates a new image.
+	 */
 	public Image() {
 		
 		// получаем изображение и проверяем на доступность
@@ -26,6 +34,11 @@ public class Image extends JComponent {
 		
 	}
 	
+	/**
+	 * Paint component.
+	 *
+	 * @param g the g
+	 */
 	public void paintComponent(Graphics g)
     {
         if(image == null) return;
