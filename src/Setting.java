@@ -1,4 +1,4 @@
-package lb;
+package src;
 
 import javax.swing.*;
 

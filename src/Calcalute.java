@@ -1,4 +1,4 @@
-package lb;
+package src;
 
 public class Calcalute extends ACalculate{
     Calcalute() {

@@ -1,4 +1,4 @@
-package lb;
+package src;
 
 public abstract class ACalculate {
 	public static float polis=0;//итоговая стоимость
