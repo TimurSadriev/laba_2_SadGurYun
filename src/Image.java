@@ -42,7 +42,7 @@ public class Image extends JComponent {
 	/**
 	 * Унаследованный метод отрисовки.
 	 *
-	 * @param графика открытого окна
+	 * @param g графика открытого окна
 	 */
 	public void paintComponent(Graphics g)
     {

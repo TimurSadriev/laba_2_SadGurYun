@@ -25,8 +25,8 @@ public class Setting extends Asetting{
     /**
      * Установить стоимость.
      *
-     * @param Передаётся поле стоимости
-     * @throws Числовой формат исключения
+     * @param field Передаётся поле стоимости
+     * @throws NumberFormatException Числовой формат исключения
      */
     @Override
     public void setCost(JTextField field) throws NumberFormatException {
@@ -40,7 +40,7 @@ public class Setting extends Asetting{
     /**
      * Установливаем параметры.
      *
-     * @param Передаётся номер параметра.
+     * @param x Передаётся номер параметра.
      */
     @Override
     public void set(int x) {
@@ -50,7 +50,7 @@ public class Setting extends Asetting{
     /**
      * Устанавливаем типы.
      *
-     * @param Передаётся тип
+     * @param x Передаётся тип
      */
     @Override
     public void setType(int x) {
@@ -60,7 +60,7 @@ public class Setting extends Asetting{
     /**
      * Сбрасывает параметр.
      *
-     * @param Передаётся номер параметра
+     * @param x Передаётся номер параметра
      */
     @Override
     public void reset(int x) {
@@ -70,8 +70,8 @@ public class Setting extends Asetting{
     /**
      * Получаем параметр.
      *
-     * @param Передаётся номер параметра
-     * @return Значение параметра
+     * @param x Передаётся номер параметра
+     * @return int Значение параметра
      */
     @Override
     public int get(int x) {

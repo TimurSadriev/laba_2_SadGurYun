@@ -46,7 +46,7 @@ public abstract class Asetting extends Exception{
     	 * Абстрактный метод получает значение переменной.
     	 *
     	 * @param x - значение стоимости недвижимости
-    	 * @return возвращает значение переменной
+    	 * @return int возвращает значение переменной
     	 */
     	public abstract int get(int x);
 }

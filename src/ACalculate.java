@@ -1,5 +1,7 @@
 /*
- * 
+ * Абстрактный класс расчета.
+ * @author yunyaev
+ * @version 2.0
  */
 package src;
 
@@ -20,8 +22,8 @@ public abstract class ACalculate {
     /**
      * Абстрактный метод расчета стоимости.
      *
-     * @param Setting s - параметр настроек калькулятора
-     * @return Стоимость полиса
+     * @param s Setting s - параметр настроек калькулятора
+     * @return float Стоимость полиса
      */
     public abstract  float Cal(Setting s);
 }

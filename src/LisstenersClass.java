@@ -20,7 +20,7 @@ public class LisstenersClass {
 	/**
 	 * Конструктор класса обработки.
 	 *
-	 * @param Ссылка на окно
+	 * @param w Ссылка на окно
 	 */
 	LisstenersClass(win w){
 		this.w=w;
@@ -46,7 +46,7 @@ public class LisstenersClass {
         	/**
         	 * Обработчик кнопки тип.
         	 *
-        	 * @param
+        	 * @param event
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent event) {
@@ -62,7 +62,7 @@ public class LisstenersClass {
         	/**
         	 * Обработчик кнопки выхода.
         	 *
-        	 * @param 
+        	 * @param arg0
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent arg0) {
@@ -78,7 +78,7 @@ public class LisstenersClass {
         	/**
         	 * Обработчик кнопки посчитать.
         	 *
-        	 * @param
+        	 * @param event
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent event) {
@@ -106,7 +106,7 @@ public class LisstenersClass {
 		/**
 		 * Обработчик кнопки инфа о разработчике.
 		 *
-		 * @param 
+		 * @param event
 		 */
 		@Override
 		public void actionPerformed(ActionEvent event) {

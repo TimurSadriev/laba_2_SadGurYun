@@ -23,7 +23,7 @@ public class Calcalute extends ACalculate{
     /**
      * Конструктор, принимающий коэффициенты
      * 
-     * @param массив коэффициентов x
+     * @param x массив коэффициентов 
      */
     public Calcalute(float x[][]) {
     	for (int i=0;i<2;i++)
@@ -36,8 +36,8 @@ public class Calcalute extends ACalculate{
     /**
      * Основная функция рассчёта стоимости.
      *
-     * @param {@link Setting} передаём настройки в функцию 
-     * @return возвращает стоимость полиса
+     * @param s {@link Setting} передаём настройки в функцию 
+     * @return float возвращает стоимость полиса
      */
     @Override
     public  float Cal(Setting s) {
