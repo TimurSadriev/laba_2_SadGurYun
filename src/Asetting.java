@@ -7,44 +7,46 @@ import java.io.IOException;
 // TODO: Auto-generated Javadoc
 
 /**
- * The Class Asetting.
+ * @author yunyaev
+ * @version 2.0
+ * Абстрактный класс настроек наследует класс исключений.
  */
 public abstract class Asetting extends Exception{
 	 
  	/**
- 	 * Sets the cost.
+ 	 * Абстрактный метод обрабатывает исключения.
  	 *
- 	 * @param field the new cost
+ 	 * @param field - поле ввода стоимости
  	 * @throws NumberFormatException the number format exception
  	 */
  	public abstract void setCost(JTextField field) throws NumberFormatException;
 	    
     	/**
-    	 * Sets the.
+    	 * Абстрактный метод устанавливает значение переменной.
     	 *
-    	 * @param x the x
+    	 * @param x - значение стоимости недвижимости
     	 */
     	public abstract void set(int x);
 	    
     	/**
-    	 * Sets the type.
+    	 * Абстрактный метод присваивает переменной новый тип.
     	 *
-    	 * @param x the new type
+    	 * @param x - значение стоимости недвижимости
     	 */
     	public abstract void setType(int x);
 	    
     	/**
-    	 * Reset.
+    	 * Абстрактный метод сбрасывает значение переменной.
     	 *
-    	 * @param x the x
+    	 * @param x - значение стоимости недвижимости
     	 */
     	public abstract void reset(int x);
 	    
     	/**
-    	 * Gets the.
+    	 * Абстрактный метод получает значение переменной.
     	 *
-    	 * @param x the x
-    	 * @return the int
+    	 * @param x - значение стоимости недвижимости
+    	 * @return возвращает значение переменной
     	 */
     	public abstract int get(int x);
 }

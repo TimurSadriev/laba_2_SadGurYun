@@ -5,21 +5,23 @@ package src;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class ACalculate.
+ * @author yunyaev
+ * @version 2.0
+ * Абстрактный класс расчета.
  */
 public abstract class ACalculate {
 	
-	/** The polis. */
+	/** Итоговая стоимость полиса. */
 	public static float polis=0;//итоговая стоимость
     
-    /** The koefficiets. */
+    /** Коэффициенты для расчета полиса. */
     protected  float[][] koefficiets;  //коэффициенты для расчета
     
     /**
-     * Cal.
+     * Абстрактный метод расчета стоимости.
      *
-     * @param s the s
-     * @return the float
+     * @param Setting s - параметр настроек калькулятора
+     * @return Стоимость полиса
      */
     public abstract  float Cal(Setting s);
 }
