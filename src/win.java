@@ -7,17 +7,18 @@ import java.awt.event.ActionListener;
 // TODO: Auto-generated Javadoc
 /**
  * Основной класс программы с интерфейсом
+ * @author TimurSadriev
  */
 public class win {
 	    
-    	/** The set. */
-    	public Setting set =new Setting();//значения выбранных параметров для расчета
+    	/** значения выбранных параметров для расчета. */
+    	public Setting set =new Setting();
 	    
-    	/** The lissteners class. */
+    	/** Слушатели для кнопок. */
     	private LisstenersClass lisstenersClass=new LisstenersClass(this);
 	    
-    	/** The buttons. */
-    	private  JRadioButton[] buttons =new JRadioButton[7]; //массив для кнопок параметров
+    	/** Массив кнопок для сохранения параметров. */
+    	private  JRadioButton[] buttons =new JRadioButton[7]; 
 	    
     	/** The main GUI. */
     	private  JFrame main_GUI=new JFrame();
@@ -25,25 +26,25 @@ public class win {
     	/** The main panel. */
     	private  JPanel main_panel= new JPanel();
 	    
-    	/** The type. */
+    	/** Тип имущества:движимое или недвижимое. */
     	protected JComboBox type;
 	    
     	/** The button exit. */
     	private  JButton button_exit = new JButton("Выход");
 		
-		/** The button infa. */
+		/** Кнопка с информацией о разработчиках. */
 		private  JButton button_infa = new JButton("Разработчики");
 	    
-    	/** The button calculate. */
+    	/** Кнопка рассчета. */
     	private  JButton button_calculate = new JButton("Рассчитать");
 	    
-    	/** The info 1. */
+    	/** Надпись. */
     	private  JLabel info1 = new JLabel("Введите стоимость имущества");
 	    
-    	/** The output. */
+    	/** Поле вывода. */
     	protected JTextField output= new JTextField("", 20);
 	    
-    	/** The input. */
+    	/** Поле ввода. */
     	protected  JTextField input = new JTextField("", 20);
 
 	    /**
@@ -62,14 +63,6 @@ public class win {
 	            buttons[i] = new JRadioButton();
 	            buttons[i].setBounds(20,50+20*i,200,30);
 	            int n=i;
-	            /*buttons[i].addActionListener(new ActionListener() {
-	                @Override
-	                public void actionPerformed(ActionEvent e) {
-	                    if (buttons[n].isSelected())
-	                        set.set(n);
-	                    else  set.reset(n);
-	                }
-	            });*/
 	            buttons[i].addActionListener((ActionEvent e)-> {
 	                    if (buttons[n].isSelected())
 	                        set.set(n);
@@ -102,13 +95,13 @@ public class win {
 			main_panel.add(button_infa);
 
 	        JLabel info2 = new JLabel("Вид имущества");
-	        info2.setBounds(20,25,120,30);
+	        info2.setBounds(20,25,140,30);
 	        main_panel.add(info2);
 	        String[] s= {"Движимое", "Недвижимое"};
 	        type=new JComboBox(s);
 	        type.addActionListener(lisstenersClass.listenerType);
 
-	        type.setBounds(120,30,120,25);
+	        type.setBounds(140,30,120,25);
 	        main_panel.add(type);
 	        info1.setBounds(20,200,200,30);
 	        main_panel.add(info1);
@@ -120,7 +113,7 @@ public class win {
 	        main_panel.add(output);
 	        Image logo = new Image(); //загрузка картинки
 	    	logo.setSize(180, 100);
-	    	logo.setLocation(200, 0);
+	    	logo.setLocation(220, 40);
 	    	main_panel.add(logo);
 
 	        main_GUI.setVisible(true);

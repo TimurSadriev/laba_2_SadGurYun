@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package src;
 
 import java.awt.Graphics;
@@ -25,7 +28,7 @@ public class Image extends JComponent {
 		// получаем изображение и проверяем на доступность
 		try 
 		{
-			image = ImageIO.read(new File("../1.jpg"));
+			image = ImageIO.read(new File("../src/1.jpg"));
 			
 		}
 		catch(IOException e) {

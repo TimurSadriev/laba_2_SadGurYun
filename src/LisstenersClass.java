@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package src;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -84,6 +87,10 @@ public class LisstenersClass {
 	                w.input.setText("");
 	                return;
 	            }
+	            if (w.set.CostOfProperty<0) {
+		            w.output.setText("Ошибка число меньше нуля!");
+	                w.input.setText("");
+	                return;}
 	            Calcalute c=new Calcalute();
 	            w.output.setText(Float.toString(c.Cal(w.set)));
 	        }
