@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 /**
  * Основной класс программы с интерфейсом
  * @author TimurSadriev
+ * @version 228
  */
 public class win {
 	    

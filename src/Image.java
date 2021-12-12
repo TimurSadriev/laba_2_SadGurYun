@@ -13,15 +13,17 @@ import javax.swing.JComponent;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class Image.
+ * @author IgorGuryanov
+ * @version 228
+ * Класс с добавлением картинки.
  */
 public class Image extends JComponent {
 
-	/** The image. */
+	/** Картинка */
 	BufferedImage image;
 	
 	/**
-	 * Instantiates a new image.
+	 * Объект картинки.
 	 */
 	public Image() {
 		
@@ -38,9 +40,9 @@ public class Image extends JComponent {
 	}
 	
 	/**
-	 * Paint component.
+	 * Унаследованный метод отрисовки.
 	 *
-	 * @param g the g
+	 * @param графика открытого окна
 	 */
 	public void paintComponent(Graphics g)
     {

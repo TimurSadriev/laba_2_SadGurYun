@@ -8,43 +8,45 @@ import javax.swing.*;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class LisstenersClass.
+ * @author yunyaev
+ * @version 2.0
+ * Класс обработчиков.
  */
 public class LisstenersClass {
 	
-	/** The w. */
+	/** Ссылка на окно. */
 	win w;
 	
 	/**
-	 * Instantiates a new lissteners class.
+	 * Конструктор класса обработки.
 	 *
-	 * @param w the w
+	 * @param Ссылка на окно
 	 */
 	LisstenersClass(win w){
 		this.w=w;
 	}
 	 
- 	/** The listener exit. */
+ 	/** Обработчик кнопки выхода. */
  	public  ListenerExit listenerExit=new ListenerExit();
 	    
-    	/** The listener calculate. */
+    	/** Обработчик кнопки посчитать. */
     	public  ListenerCalculate listenerCalculate=new ListenerCalculate();
 	    
-    	/** The listener type. */
+    	/** Обработчик кнопки тип. */
     	public  ListenerType listenerType=new ListenerType();
 		
-		/** The listener infa. */
+		/** Обработчик кнопки инфа о разработчике. */
 		public  ListenerInfa listenerInfa=new ListenerInfa();
 	    
     	/**
-    	 * The Class ListenerType.
+    	 * Класс обработки кнопки тип.
     	 */
     	public class ListenerType implements ActionListener {
 	        
         	/**
-        	 * Action performed.
+        	 * Обработчик кнопки тип.
         	 *
-        	 * @param event the event
+        	 * @param
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent event) {
@@ -53,14 +55,14 @@ public class LisstenersClass {
 	    }
 	    
     	/**
-    	 * The Class ListenerExit.
+    	 * Класс обработки кнопки выхода.
     	 */
     	public class ListenerExit implements ActionListener {
 	        
         	/**
-        	 * Action performed.
+        	 * Обработчик кнопки выхода.
         	 *
-        	 * @param arg0 the arg 0
+        	 * @param 
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent arg0) {
@@ -69,14 +71,14 @@ public class LisstenersClass {
 	    }
 	    
     	/**
-    	 * The Class ListenerCalculate.
+    	 * Класс обработки кнопки посчитать.
     	 */
     	public class ListenerCalculate implements ActionListener {
 	        
         	/**
-        	 * Action performed.
+        	 * Обработчик кнопки посчитать.
         	 *
-        	 * @param event the event
+        	 * @param
         	 */
         	@Override
 	        public void actionPerformed(ActionEvent event) {
@@ -97,14 +99,14 @@ public class LisstenersClass {
 	    }
 	
 	/**
-	 * The Class ListenerInfa.
+	 * Класс обработки кнопки инфы о разработчике.
 	 */
 	public class ListenerInfa implements ActionListener {
 		
 		/**
-		 * Action performed.
+		 * Обработчик кнопки инфа о разработчике.
 		 *
-		 * @param event the event
+		 * @param 
 		 */
 		@Override
 		public void actionPerformed(ActionEvent event) {

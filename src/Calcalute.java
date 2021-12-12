@@ -5,12 +5,14 @@ package src;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class Calcalute.
+ * Класс c вычислениями.
+ * @author IgorGuryanov
+ * @version 228
  */
 public class Calcalute extends ACalculate{
     
     /**
-     * Instantiates a new calcalute.
+     * Пустой конструктор инициализиует коэффициенты
      */
     Calcalute() {
         koefficiets= new float[][]{
@@ -19,9 +21,9 @@ public class Calcalute extends ACalculate{
     };
     
     /**
-     * Instantiates a new calcalute.
-     *
-     * @param x the x
+     * Конструктор, принимающий коэффициенты
+     * 
+     * @param массив коэффициентов x
      */
     public Calcalute(float x[][]) {
     	for (int i=0;i<2;i++)
@@ -32,10 +34,10 @@ public class Calcalute extends ACalculate{
     }
     
     /**
-     * Cal.
+     * Основная функция рассчёта стоимости.
      *
-     * @param s the s
-     * @return the float
+     * @param {@link Setting} передаём настройки в функцию 
+     * @return возвращает стоимость полиса
      */
     @Override
     public  float Cal(Setting s) {

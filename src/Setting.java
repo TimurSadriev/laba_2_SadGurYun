@@ -7,24 +7,26 @@ import javax.swing.*;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class Setting.
+ * @author IgorGuryanov
+ * @version 228
+ * Класс с настройками.
  */
 public class Setting extends Asetting{
     
-    /** The Type of property. */
-    public int TypeOfProperty;//тип имущества
+    /** Тип имущества. */
+    public int TypeOfProperty;
     
-    /** The Cost of property. */
-    public float CostOfProperty;//стоимость имущества
+    /** Стоимость имущества. */
+    public float CostOfProperty;
     
-    /** The p. */
-    private int[] p=new int [7];//массив сохраняющий параметры пользователя из кнопок (от чего страховать)
+    /** Массив сохраняющий параметры пользователя из кнопок (от чего страховать). */
+    private int[] p=new int [7];
     
     /**
-     * Sets the cost.
+     * Установить стоимость.
      *
-     * @param field the new cost
-     * @throws NumberFormatException the number format exception
+     * @param Передаётся поле стоимости
+     * @throws Числовой формат исключения
      */
     @Override
     public void setCost(JTextField field) throws NumberFormatException {
@@ -36,9 +38,9 @@ public class Setting extends Asetting{
     }
     
     /**
-     * Sets the.
+     * Установливаем параметры.
      *
-     * @param x the x
+     * @param Передаётся номер параметра.
      */
     @Override
     public void set(int x) {
@@ -46,9 +48,9 @@ public class Setting extends Asetting{
     }
 
     /**
-     * Sets the type.
+     * Устанавливаем типы.
      *
-     * @param x the new type
+     * @param Передаётся тип
      */
     @Override
     public void setType(int x) {
@@ -56,9 +58,9 @@ public class Setting extends Asetting{
     }
 
     /**
-     * Reset.
+     * Сбрасывает параметр.
      *
-     * @param x the x
+     * @param Передаётся номер параметра
      */
     @Override
     public void reset(int x) {
@@ -66,10 +68,10 @@ public class Setting extends Asetting{
     }
 
     /**
-     * Gets the.
+     * Получаем параметр.
      *
-     * @param x the x
-     * @return the int
+     * @param Передаётся номер параметра
+     * @return Значение параметра
      */
     @Override
     public int get(int x) {
